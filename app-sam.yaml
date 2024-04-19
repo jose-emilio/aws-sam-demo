@@ -11,7 +11,7 @@ Resources:
         Type: AWS::Serverless::Function 
         Properties:
             Architectures:
-                 - x86_64
+                 - arm64
             CodeUri: ./lambda
             Handler: aplicacion.manejador
             Runtime: python3.10
