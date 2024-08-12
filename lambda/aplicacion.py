@@ -7,4 +7,4 @@ def manejador(event, context):
         print('NombreEvento: ' + record['eventName'])
         print("Registro de DynamoDB:\n " + json.dumps(record['dynamodb'], indent=2))
     print('Se han procesado %s registros.' % str(len(event['Records'])))
-    return {"Registros":str(len(event['Records']))}
+    return {"Registros procesados":str(len(event['Records']))}
