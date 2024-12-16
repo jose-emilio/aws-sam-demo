@@ -27,7 +27,7 @@ Resources:
                         BatchSize: 10
 
     DynamoDBTable:
-        Type: 'AWS::DynamoDB::Table'
+        Type: AWS::DynamoDB::Table
         Properties:
             StreamSpecification:
                 StreamViewType: NEW_AND_OLD_IMAGES
